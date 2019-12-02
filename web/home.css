@@ -1,0 +1,30 @@
+#all{
+    display:block;
+}
+.center{
+    text-align: center;
+}
+body{
+    background-image: url(homebackground.jpg);
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    color: white;
+}
+
+.msg{
+    border:1px solid;
+    background-color: white;
+    height: 50px;
+    width: 400px;
+}
+#messages{
+    position: relative;
+    text-align: center;
+}
+#button{
+    background-color: lightblue;
+}

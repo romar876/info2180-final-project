@@ -1,0 +1,32 @@
+CREATE DATABASE CheapoMail;
+USE CheapoMail;
+
+ /*Create Users Table*/
+ 
+ CREATE TABLE Users ( id INT(11) NOT NULL AUTO_INCREMENT,
+ firstname VARCHAR(255) NOT NULL,
+ lastname VARCHAR(255) NOT NULL,
+ username VARCHAR(255) NOT NULL,
+ password VARCHAR(255) NOT NULL,
+ PRIMARY KEY(id)
+ );
+ 
+ /*Create Messages Table*/
+ CREATE TABLE Messages ( id INT(11) NOT NULL AUTO_INCREMENT,
+ recipients_id INT(11) NOT NULL,
+ sender_id INT(11) NOT NULL,
+ subject VARCHAR(50) NOT NULL,
+ body TEXT,
+ date_sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+ PRIMARY KEY(id)
+ );  
+
+/*Create Messages Read Table*/
+
+CREATE TABLE Messages_read(id INT(11) AUTO_INCREMENT,
+message_id INT(11) NOT NULL,
+reader_id INT(11) NOT NULL,
+date_read TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+FOREIGN KEY(message_id) REFERENCES Messages(id),
+PRIMARY KEY(id)
+);

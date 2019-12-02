@@ -1,0 +1,59 @@
+body{
+	background: url("background3.jpg");
+	background-size: cover;
+}
+
+h1{
+	font-family: "Spectral SC", serif;
+	text-align: center;
+	font-size: 55px;
+	color: white;
+	padding: 0;
+}
+
+h3{
+	font-family: "Montserrat",sans-serif;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+}
+
+.signin{
+	position: absolute;
+	float: left;
+	left: 505px;
+	top: 250px;
+}
+
+label{
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+}
+
+button{
+	background-color: orchid;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	padding: 6px 12px;
+	font-weight: bold;
+	display: inline-block;
+	border-radius: 2px;
+	position: absolute;
+	left: 670px;
+	top: 400px;
+}
+
+button:hover{
+	background-color: cornflowerblue;
+}
+
+input{
+	background-color: orchid;
+	padding: 5px 50px;
+}
+#errorMessage{
+	color: white;
+	text-align: center;
+}

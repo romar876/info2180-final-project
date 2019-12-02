@@ -1,0 +1,62 @@
+#head{
+    color: white;
+    font-family: Arial;
+    font-size: 36px;
+    text-align: center;
+    padding: 0 auto;
+   
+    
+}
+body{
+    background-image: url(form.jpg);
+    background-size: cover;
+}
+
+#firstname{
+    position: absolute;
+    left: 350px;
+    
+}
+
+#lastname{
+    position: absolute;
+    left: 350px;
+    top: 200px;
+    
+}
+
+#username{
+    position: absolute;
+    left: 350px;
+    top: 300px;
+}
+
+#password{
+    
+    position: absolute;
+    left: 350px;
+    top: 400px;
+}
+
+#help{
+    position: absolute;
+    font-family: Verdana serif;
+    left: 420px;
+    top: 365px;
+    font-size: 12px;
+    color: red;
+}
+
+input[type="submit"]{
+    border: none;
+    padding: 0 20px 0 20px;
+    box-shadow: 2px 2px 2px black;
+    
+    position: absolute;
+    top: 450px;
+    left: 460px;
+    border-radius: 3px;
+    color: indigo;
+    font-family: serif;
+    cursor: pointer;
+}
