@@ -1,0 +1,63 @@
+header{
+  font-family: Bahnschrift SemiBold;
+  background-color: black;
+  color: white;
+  height: 30px;
+  grid-area: header;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+#mainsection{
+  grid-area: mainsection;
+  font-family: Bahnschrift SemiBold;
+  padding-left: 20px;
+}
+
+
+
+#sidepanel{
+  font-family: Bahnschrift SemiBold;
+  grid-area: sidepanel;
+  background-color: Gainsboro;
+  padding-left: 10px;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 200px 900px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  ". header header ."
+  ". sidepanel mainsection ."
+  ". sidepanel mainsection ."
+  ". sidepanel mainsection ."
+  ". sidepanel mainsection .";
+  
+}
+
+input[type=text], input[type=password] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: Gainsboro;
+}
+
+button {
+  background-color: deepskyblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 10px;
+}
+
+#description{
+  padding: 25px;
+}
