@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html id='content'>
-	<head>
-		<meta charset="utf-8">
-		<title>Cheapo Mail</title>
-		<script type="text/javascript" src="login.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="login.css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Spectral+SC" rel="stylesheet"> 
-	</head>
-	
-	<body>
-		<h1>Cheapo Mail</h1>
-		<h3>Connect with your world</h3>
-		
-		<div class="signin">
-			<label for="username"> Username:</label>
-			<input id="username" type="text" name="username"/>
-			<br><br>
-	
-			<label for="password">Password:</label>
-			<input id="password" type="password" name="password" />
-			<br><br>
-				
-			<div id="errorMessage">
-				
-			</div>s
-		</div>
-		
-		<button id="login">Login</button>
-		
-	</body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>INFO2180-Final-Project</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="app.js"></script>
+    
+</head>
+
+<body>
+
+
+            <div class = 'main-area'>
+                <form>
+                    <br>
+
+                    <br><br>
+                    Email:<br>
+                    <input type="text" name="email" id="email">
+                    <br><br>
+                    Password:<br>
+                    <input type="text" name="password" id="password">
+                </form>
+
+            </div>
+            <div id="result">
+
+            </div>
+
+            <div>
+                <button class="submit" id="submit" type="button">Submit</button>
+            </div>
+
+
+
+</body>
+
 </html>
